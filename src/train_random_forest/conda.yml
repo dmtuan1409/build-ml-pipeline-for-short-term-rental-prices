@@ -1,13 +1,16 @@
 name: basic_cleaning
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 dependencies:
-  - pandas=1.1.4
+  - python=3.8.6
   - pip=20.3.3
-  - mlflow=1.14.1
-  - scikit-learn=0.24.1
-  - matplotlib=3.2.2
-  - pillow=8.1.2
   - pip:
-      - wandb==0.10.21
+      - wandb==0.13.2
+      - mlflow==2.2.2
+      - protobuf==3.20.*
+      - pandas==1.2.3
+      - requests==2.24.0
+      - scikit-learn==0.24.1
+      - matplotlib==3.2.2
+      - pillow==8.1.2
